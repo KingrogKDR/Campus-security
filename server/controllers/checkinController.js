@@ -1,5 +1,5 @@
-const User = require('../models/User');
-const Log = require('../models/Log');
+const User = require('../models/Users.js');
+const Log = require('../models/Log.js');
 
 const checkin = async (req, res) => {
   try {
