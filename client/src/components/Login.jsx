@@ -16,7 +16,7 @@ function Login(){
             })
         })
         if(res.ok){
-            alert("Successfull")
+            alert("Successful")
         }
         else{
             alert("Something went wrong")
@@ -32,7 +32,7 @@ function Login(){
                         <label htmlFor="email">Email</label>
                         <input type="text" id="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} className="shadow-lg border-2 border-slate-200 block mb-8 px-4 py-2 rounded-2xl"/>
                         <label htmlFor="aadhar">Aadhar Number</label>
-                        <input type="text" id="aadhar" value={aadhar_number} onChange={(e)=>{setAadharNumber(e.target.value)}} className="shadow-lg border-2 border-slate-200 block mb-8 px-4 py-2 rounded-2xl"/>
+                        <input type="tel" id="aadhar" value={aadhar_number} onChange={(e)=>{setAadharNumber(e.target.value)}} className="shadow-lg border-2 border-slate-200 block mb-8 px-4 py-2 rounded-2xl"/>
                         <button className="shadow-lg py-3 px-6 rounded-2xl bg-gradient-to-t from-purple-500 to-violet-300 text-white mb-8 hover:ring-2 hover:ring-violet-200 hover:text-lg active:to-blue-200 transition duration-150 ease-in-out">Login</button>
                     </form>
                 </div>

@@ -4,11 +4,13 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout'
 import Login from './components/Login'
+import Register from './components/Register'
 
 const myRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='/login' element={<Login />}/>
+      <Route path='/register' element={<Register />}/>
     </Route>
   )
 )
