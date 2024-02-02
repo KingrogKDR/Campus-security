@@ -2,12 +2,13 @@ const express = require("express");
 const jwt  = require("jsonwebtoken")
 const router = express.Router();
 const { jwtDecode }=require("jwt-decode");
+const Users = require("../models/Users.js")
 
 
 router.post("/register",async (req,res)=>{
     const {name,emailid,phoneno,dob,aadhar_number}=req.body;
     try{
-        const userDoc =await Users.create({name,email,phoneno,dob,aadhar_number});
+        const userDoc =await Users.create({name,emailid,phoneno,dob,aadhar_number});
         res.json(userDoc);
     }
     catch(err){
@@ -45,3 +46,4 @@ router.get("/profile",(req,res)=>{
         })
     }
 })
+module.exports=router;

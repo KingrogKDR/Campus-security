@@ -1,16 +1,20 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = require('./routes/checkinRoute.js');
+const userrouter = require("./routes/authorization.js")
+const scanRoutes=require("./routes/scanRoutes.js")
 const app = express();
-const PORT = 8001;
+const PORT = 5001;
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/UniSafedb',);
 
 app.use(express.json());
 
-// Endpoint for checking in
+// Endpoints
 app.use('/checkin', router);  // Use router.checkinRoute directly
+app.use('/',userrouter);
+app.use('/scan', scanRoutes);
 
 // Start the server
 app.listen(PORT, () => {
