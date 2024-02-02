@@ -6,10 +6,7 @@ const app = express();
 const PORT = 8000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/your_user_database', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect('mongodb://localhost:27017/UniSafedb');
 
 // Define User model
 
