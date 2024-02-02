@@ -20,29 +20,44 @@ router.post("/register",async (req,res)=>{
 router.post("/login",async (req,res)=>{
     const {aadhar_number,emailid} = req.body
     const user = await Users.findOne({emailid});
+    console.log(aadhar_number);
+    console.log(emailid)
+    console.log(user)
     if(!user){
-        req.status(404).json({message:"User not found"})
+        res.status(404).json({message:"User not found"})
     }
-    if(aadhar_number===user.aadhar_number){
-        jwt.sign({userid:user._id},'asdnbajsfjksaf',(err,token)=>{
-            if(err) throw err;
-            res.cookie("token",token).json({
-                id:user._id,
-                name:user.name
+    console.log(user)
+    try{
+
+        if(aadhar_number==user.aadhar_number){
+            jwt.sign({username:user.name,userid:user._id,admin:user.admin},'asdnbajsfjksaf',(err,token)=>{
+                if(err) throw err;
+                res.cookie("token",token).json({
+                    id:user._id,
+                    name:user.name,
+                    admin:user.admin
+                })
             })
-        })
+       
+        }
+        else{
+            res.json({message:"Invalid credentials"})
+        }
     }
-    else{
-        res.json({message:"Invalid credentials"})
+    catch(err){
+        console.log(err);
+        res.status(500).json({message:"Something went wrong"});
     }
 })
 
 router.get("/profile",(req,res)=>{
     const token = req.cookies.token;
     if(token){
+
         jwt.verify(token,'asdnbajsfjksaf',{},(err,userData)=>{
             if(err) throw err;
-            console.log(userData);
+            console.log("From profile: ",userData);
+            res.json(userData);
         })
     }
 })
