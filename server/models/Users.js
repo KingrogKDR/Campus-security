@@ -19,6 +19,22 @@ const userSchema = new mongoose.Schema({
   dob: {
     type: Date,
     required: true,
+  },
+  emailid:
+  {
+    type: String,
+    lowercase: true,
+    required: true,
+  },
+  phoneno:
+  {
+    type: Number,
+    required: true,
+  },
+  admin:
+  {
+    type: Number,
+    default: 0,
   }
 
 });
