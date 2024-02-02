@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Login from './components/Login'
 import { UserContextProvider } from './providers/UserProvider'
 import Dashboard from './components/Dashboard'
+import Register from './components/Register'
 import Admin from './components/Admin'
 
 const myRouter = createBrowserRouter(
@@ -14,6 +15,7 @@ const myRouter = createBrowserRouter(
       <Route path='/login' element={<Login />}/>
       <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/admin' element={<Admin />}/>
+      <Route path='/register' element={<Register />}/>
     </Route>
   )
 )
