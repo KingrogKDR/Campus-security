@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = require('./routes/checkinRoute.js');
 const userrouter = require("./routes/authorization.js")
+const scanRoutes=require("./routes/scanRoutes.js")
 const app = express();
 const PORT = 5001;
 

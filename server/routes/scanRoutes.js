@@ -1,8 +1,8 @@
 const express = require('express');
-const scanController = require('../controllers/scanController');
+const scanController = require('../controllers/scanControllers');
 
-const router = express.Router();
+const scanRouter = express.Router();
 
-router.post('/', scanController.scanQRCode);
+scanRouter.post('/', scanController.scanQRCode);
 
-module.exports = router;
+module.exports = scanRouter;
