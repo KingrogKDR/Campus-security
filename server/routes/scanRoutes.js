@@ -3,6 +3,6 @@ const scanController = require('../controllers/scanController');
 
 const router = express.Router();
 
-router.post('/scan', scanController.scanQRCode);
+router.post('/', scanController.scanQRCode);
 
 module.exports = router;
