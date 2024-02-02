@@ -10,9 +10,11 @@ mongoose.connect('mongodb://localhost:27017/UniSafedb',);
 
 app.use(express.json());
 
-// Endpoint for checking in
+// Endpoints
 app.use('/checkin', router);  // Use router.checkinRoute directly
 app.use('/',userrouter);
+app.use('/scan', scanRoutes);
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
