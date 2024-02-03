@@ -13,7 +13,7 @@ const Header1 = () => {
     <header className='shadow sticky z-10 left-0 top-0'>
         <nav className='lg:w-[18rem] w-dvw bg-[#DCCfec] lg:h-dvh static lg:absolute h-[112px] border-b-[1px] border-slate-400 lg:border-none'>
             <div className='flex flex-col items-center lg:space-y-16 space-y-2 h-fit lg:h-full p-6 px-5'>
-                <div className='flex space-x-4 w-full items-center py-5 lg:border-b-2 z-100'>
+                <div className='flex space-x-4 w-full items-center py-5 lg:border-b-2 z-100 border-gray-400'>
                     <Link to="/">
                         <div className='bg-[#535151bf] rounded-full w-10 h-10'></div>
                     </Link>
@@ -34,11 +34,11 @@ const Header1 = () => {
                         </button>
                     </div>   
                 </div>
-                <div className={`${isMenuOpen ? 'flex bg-[#d4d4d4] h-screen' : 'hidden'} lg:flex space-y-20 flex-col py-10 w-full px-6`}>
+                <div className={`${isMenuOpen ? 'flex bg-[#d4d4d4] h-screen inset-0' : 'hidden'} lg:flex space-y-20 flex-col py-10 w-full px-6`}>
                     <Link to="/admin" className='py-2 px-4 text-xl hover:underline'>User Logs</Link>
                     <Link to="/complain"  className='py-2 px-4 text-xl hover:underline'>Complaint Desk</Link>
                     <NavLink to="/register" className={({isActive})=>`py-2 px-4 text-xl ${isActive ? '' : 'text-black'} hover:underline`}>Register</NavLink>
-                    <div className='border-t-2 w-full flex items-center justify-center pt-10 text-xl'>
+                    <div className='border-t-2 w-full flex items-center justify-center pt-10 text-xl border-gray-400'>
                         <button className='hover:underline'>
                             Logout
                         </button>        
