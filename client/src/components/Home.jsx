@@ -1,4 +1,5 @@
 import React from "react";
+import qr from "../assets/qr.svg"
 export default function Home(){
     return(
         <>
@@ -10,7 +11,7 @@ export default function Home(){
                         <p className="mt-14 lg:mt-40 text-xs lg:text-xl">Scroll to learn more</p>
                     </div>
                 </div>
-                <div className="w-full h-3/5 bg-purple-200">
+                <div className="w-full h-3/5 bg-purple-100">
                     <p className="text-center py-10 font-bold text-3xl lg:text-[48px] text-slate-700">Steps to follow</p>
                     <div className="flex justify-center items-center gap-6 lg:gap-56 mt-6">
                         <div className="space-y-3 text-sm lg:text-xl">
@@ -22,7 +23,7 @@ export default function Home(){
                             </div>
                         </div>
                         <div className="">
-                            <img alt="qr-code" />
+                            <img src={qr} alt="qr-code" />
                         </div>
                         <div className="space-y-3 text-sm lg:text-xl">
                             <p className="pt-6"><span className="mr-2 bg-white rounded-full px-2">3</span>Scan your id at the</p>
