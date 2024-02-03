@@ -15,7 +15,9 @@ const Header1 = () => {
             <div className='flex flex-col items-center lg:space-y-16 space-y-2 h-fit lg:h-full p-6 px-5'>
                 <div className='flex space-x-4 w-full items-center py-5 lg:border-b-2 z-100 border-gray-400'>
                     <Link to="/">
-                        <div className='bg-[#535151bf] rounded-full w-10 h-10'></div>
+                        <div className='bg-[#535151bf] rounded-full w-10 h-10'>
+                            <img className='rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSOXFfn6fT0tsbbeqpnlvTHWyb_FB2MHHWw&usqp=CAU" alt="admin" />
+                        </div>
                     </Link>
                     <h1 className='text-2xl'>Admin</h1>
                     <div className='w-full flex justify-end lg:hidden pr-8'>
@@ -36,7 +38,7 @@ const Header1 = () => {
                 </div>
                 <div className={`${isMenuOpen ? 'flex bg-[#d4d4d4] h-screen inset-0' : 'hidden'} lg:flex space-y-20 flex-col py-10 w-full px-6`}>
                     <Link to="/admin" className='py-2 px-4 text-xl hover:underline'>User Logs</Link>
-                    <Link to="/complain"  className='py-2 px-4 text-xl hover:underline'>Complaint Desk</Link>
+                    <Link to="/complain"  className='py-2 px-4 text-xl hover:underline'>Complaint<span className='bg-[#8d1e05] text-white rounded-full px-3 py-1 ml-2'>10</span></Link>
                     <NavLink to="/register" className={({isActive})=>`py-2 px-4 text-xl ${isActive ? '' : 'text-black'} hover:underline`}>Register</NavLink>
                     <div className='border-t-2 w-full flex items-center justify-center pt-10 text-xl border-gray-400'>
                         <button className='hover:underline'>

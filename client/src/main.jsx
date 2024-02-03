@@ -10,6 +10,7 @@ import Register from './components/Register'
 import Admin from './components/Admin'
 import Home from './components/Home'
 import Scan from './components/Scan'
+import Complain from './components/Complain'
 
 
 const myRouter = createBrowserRouter(
@@ -21,6 +22,7 @@ const myRouter = createBrowserRouter(
       <Route path='/register' element={<Register />}/>
       <Route path='/scan' element={<Scan />}/>
       <Route path='/admin' element={<Admin />}/>
+      <Route path='/complain' element={<Complain />}/>
     </Route>
   )
 )
