@@ -32,10 +32,15 @@ export default function Register(){
     }
     return(
         <>
-            <div className="w-full flex justify-end">
-                <div className="w-full h-screen flex justify-end items-end bg-[#d4d4d4] text-lg">
-                    <div className="bg-[#d4d4d4] w-4/5 p-6 text-slate-500">
-                        <form onSubmit={handleSubmitRegister}>
+
+
+
+            <div className="flex justify-end">
+                <div className="w-full h-screen flex lg:justify-end justify-center items-end bg-[#d4d4d4] text-lg">
+                    <div className="bg-[#d4d4d4] w-4/5 p-6 text-slate-500 my-auto lg:mt-20">
+                       
+                    <form onSubmit={handleSubmitRegister}>
+
                             <label htmlFor="fullname">
                                 Full Name
                             </label>
