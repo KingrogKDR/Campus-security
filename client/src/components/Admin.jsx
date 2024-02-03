@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 const Admin = () => {
 
+  const [visitors, setVisitors] = useState(0)
+
   const [isDropdown, setDropdown] = useState(false)
 
   const toggleDrop = () => {
@@ -14,7 +16,7 @@ const Admin = () => {
         <div className='lg:ml-[290px] lg:space-y-10 space-y-3'>
           <p className='p-8 font-semibold text-2xl lg:text-4xl shadow-lg'>Dashboard</p>
           <div className='flex flex-wrap items-center justify-center mt-10'>
-            <div className='bg-white pt-10 pb-8 px-8 w-11/12 mt-2 rounded-2xl'><span className='text-2xl font-semibold'>Visitors <span className='bg-[#1a3a3a] text-white rounded-full px-2 py-1'>10</span></span> 
+            <div className='bg-white pt-10 pb-8 px-8 w-11/12 mt-2 rounded-2xl'><span className='text-2xl font-semibold'>Visitors <span className='bg-[#1a3a3a] text-white rounded-full px-3 py-1'>{visitors}</span></span> 
               <div className='w-full flex justify-end mt-10'>
                 <button onClick={toggleDrop}>
                   {isDropdown ? (
@@ -29,9 +31,9 @@ const Admin = () => {
                 </button>
               </div>
               <div className={`${isDropdown ? 'grid' : 'hidden'} gap-y-3`}>
-                <span>Visitor 1</span>
-                <span>Visitor 2</span>
-                <span>Visitor 3</span>
+                <span>Visitors 1</span>
+                <span>Visitors 2</span>
+                <span>Visitors 3</span>
               </div>
           </div>
           </div>
