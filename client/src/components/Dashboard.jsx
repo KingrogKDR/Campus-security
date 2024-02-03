@@ -1,8 +1,17 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 
 const Dashboard = () => {
+
   return (
-    <div>Dashboard</div>
+    <div className='w-full h-[45rem] grid grid-rows-2 grid-cols-2 gap-4 bg-[#ddc4dd] p-10'>
+        <div className='row-span-2 bg-white rounded-3xl shadow-lg grid place-content-center'>
+          <div className='w-[23rem] bg-[#dfd4ff] h-[34.5rem] rounded-2xl shadow-2xl p-4'>
+            <div className='w-[20.813rem] h-[18.25rem] bg-gray-50 rounded-xl bg-contain bg-center bg-no-repeat' style={{backgroundImage:`url("https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=333x292")`,}}></div>
+          </div>
+        </div> 
+        <div className='bg-white rounded-3xl shadow-lg'> map</div> 
+        <div className='bg-white rounded-3xl shadow-lg'>help</div> 
+    </div>
   )
 }
 
