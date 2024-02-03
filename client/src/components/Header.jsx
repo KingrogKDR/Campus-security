@@ -5,7 +5,7 @@ import { UserContext } from '../providers/UserProvider';
 export default function Header() {
  
 
-    const {setUserInfo,userInfo}=useContext(UserContext)
+const {setUserInfo,userInfo}=useContext(UserContext)
   useEffect(() => {
     fetch("http://localhost:5001/profile",{
         credentials:'include'
