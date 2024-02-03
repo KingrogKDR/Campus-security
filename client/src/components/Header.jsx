@@ -1,8 +1,10 @@
-import React, { useEffect ,useContext} from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect ,useContext, useState} from 'react'
+import { Link, NavLink,useLocation } from 'react-router-dom'
 import { UserContext } from '../providers/UserProvider';
 
 export default function Header() {
+ 
+
     const {setUserInfo,userInfo}=useContext(UserContext)
   useEffect(() => {
     fetch("http://localhost:5001/profile",{
@@ -24,6 +26,7 @@ console.log(userInfo);
     })
     
   }
+
   const username = userInfo;
   console.log(username);
     return (
@@ -33,6 +36,17 @@ console.log(userInfo);
                     <Link to="/" className="flex items-center">
                         <span className='py-2 px-1 ml-1 text-lg font-semibold text-blue-500'>Uni<span className='font-bold text-purple-500'>Safe</span></span>
                     </Link>
+                    {/* {
+                        isActive && (
+                            <>
+                                <div>
+                                    <Link>ID Card</Link>
+                                    <Link>Map</Link>
+                                    <Link>Help</Link>
+                                </div>
+                            </>
+                        )
+                    } */}
                     <div className="flex items-center lg:order-2">
                         <Link
                             to="/login"
