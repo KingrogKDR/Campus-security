@@ -40,6 +40,7 @@ const Header1 = () => {
                     <Link to="/admin" className='py-2 px-4 text-xl hover:underline'>User Logs</Link>
                     <Link to="/complain"  className='py-2 px-4 text-xl hover:underline'>Complaint<span className='bg-[#8d1e05] text-white rounded-full px-3 py-1 ml-2'>10</span></Link>
                     <NavLink to="/register" className={({isActive})=>`py-2 px-4 text-xl ${isActive ? '' : 'text-black'} hover:underline`}>Register</NavLink>
+                    <NavLink to="/scan" className={({isActive})=>`py-2 px-4 text-xl ${isActive ? '' : 'text-black'} hover:underline`}>Scan</NavLink>
                     <div className='border-t-2 w-full flex items-center justify-center pt-10 text-xl border-gray-400'>
                         <button className='hover:underline'>
                             Logout
