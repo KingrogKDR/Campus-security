@@ -8,16 +8,17 @@ const Header1 = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen)
   }
+  
   return (
     <header className='shadow sticky z-10 left-0 top-0'>
         <nav className='lg:w-[18rem] w-dvw bg-[#DCCfec] lg:h-dvh static lg:absolute h-[112px] border-b-[1px] border-slate-400 lg:border-none'>
             <div className='flex flex-col items-center lg:space-y-16 space-y-2 h-fit lg:h-full p-6 px-5'>
                 <div className='flex space-x-4 w-full items-center py-5 lg:border-b-2 z-100'>
                     <Link to="/">
-                        <div className='bg-[#c4c4c4] rounded-full w-10 h-10'></div>
+                        <div className='bg-[#535151bf] rounded-full w-10 h-10'></div>
                     </Link>
                     <h1 className='text-2xl'>Admin</h1>
-                    <div className='w-full flex justify-end lg:hidden'>
+                    <div className='w-full flex justify-end lg:hidden pr-8'>
                         <button onClick={toggleMenu}> 
                             {isMenuOpen ? (
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
