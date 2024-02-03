@@ -46,8 +46,8 @@ function Login() {
 }
     return (
         <>
-          <div className="w-full h-screen grid grid-rows-[200px_minmax(200px,_1fr)_250px] justify-center items-center">
-            <p className="text-center text-4xl text-slate-400 font-semibold">Already a Trusted User,</p>
+          <div className="w-full h-screen grid grid-rows-[200px_minmax(350px,_1fr)_250px] justify-center items-center">
+            <p className="text-center text-4xl text-slate-400 font-semibold mt-14">Already a Trusted User?</p>
             <div className="shadow-lg flex items-center justify-center text-gray-500 border-[1px] border-slate-300 rounded-2xl">
               <form onSubmit={(e) => { handleSubmitLogin(e) }}>
                 <p className="mb-8 mt-6 font-medium text-xl">LOGIN</p>
