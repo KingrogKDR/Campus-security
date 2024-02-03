@@ -27,7 +27,7 @@ app.use('/checkin', router);
 app.use('/', userrouter);
 app.use('/qr', qrrouter);
 
-app.use('/scan', scanRoutes);
+app.use('/Scan', scanRoutes);
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
