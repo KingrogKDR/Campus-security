@@ -15,7 +15,9 @@ const Header1 = () => {
             <div className='flex flex-col items-center lg:space-y-16 space-y-2 h-fit lg:h-full p-6 px-5'>
                 <div className='flex space-x-4 w-full items-center py-5 lg:border-b-2 z-100 border-gray-400'>
                     <Link to="/">
-                        <div className='bg-[#535151bf] rounded-full w-10 h-10'></div>
+                        <div className='bg-[#535151bf] rounded-full w-10 h-10'>
+                            <img className='rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSOXFfn6fT0tsbbeqpnlvTHWyb_FB2MHHWw&usqp=CAU" alt="admin" />
+                        </div>
                     </Link>
                     <h1 className='text-2xl'>Admin</h1>
                     <div className='w-full flex justify-end lg:hidden pr-8'>
