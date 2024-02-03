@@ -7,11 +7,13 @@ import Header1 from "./components/hEADER1.JSX";
 function Layout(){
     const location = useLocation()
     const header = (location.pathname==="/admin")||(location.pathname==="/register")?<Header1/>:<Header/>
+    const footer = (location.pathname==="/")?<Footer/>:null
+
     return (
         <>
             {header}
             <Outlet />
-            <Footer />
+            {footer}
         </>
     )
 }
