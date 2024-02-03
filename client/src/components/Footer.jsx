@@ -42,7 +42,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <Link to="/" className="hover:underline">
-                                        Discord
+                                        Instagram
                                     </Link>
                                 </li>
                             </ul>
