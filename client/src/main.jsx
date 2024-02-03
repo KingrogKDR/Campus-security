@@ -6,14 +6,19 @@ import Layout from './Layout'
 import Login from './components/Login'
 import { UserContextProvider } from './providers/UserProvider'
 import Dashboard from './components/Dashboard'
+import Register from './components/Register'
 import Admin from './components/Admin'
+import Home from './components/Home'
+
 
 const myRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
+    <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login />}/>
       <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/admin' element={<Admin />}/>
+      <Route path='/register' element={<Register />}/>
     </Route>
   )
 )
@@ -24,5 +29,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <RouterProvider router={myRouter}/>
     </UserContextProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
