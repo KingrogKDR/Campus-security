@@ -7,8 +7,8 @@ const userSchema = new mongoose.Schema({
   },
   aadhar_number: {
     type: Number,
-    min: 12,
-    max: 12,
+    min: 100000000000,
+    max: 999999999999,
     required: true,
   },
   createdAt: {
