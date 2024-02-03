@@ -25,7 +25,7 @@ export default function Home(){
                             </div>
                             <div className="w-2/5 lg:w-1/5 grid justify-center mt-4 pb-8">
                                 <img src={qr} alt="qr-code" className="z-10 inset-0 shadow-lg rounded-xl size-full"/>
-                                <div className="bg-gray-500/85 p-2 rounded-full blur-md z-2 inset-0 w-20 lg:w-44"></div>
+                                <div className="bg-gray-500/85 p-2 rounded-full blur-md z-2 inset-0 w-44"></div>
                             </div>
                             <div className="w-1/5 lg:w-2/5 space-y-2 text-sm lg:text-xl ml-2 lg:mr-20">
                                 <div className="pb-8">
