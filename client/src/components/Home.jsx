@@ -8,7 +8,7 @@ export default function Home(){
                     <div className="w-full h-2/5 lg:h-4/5 bg-no-repeat bg-cover mb-1" style={{backgroundImage:`url("download.webp")`}}>
                         <div className="w-full h-full text-center backdrop-blur-[6px] lg:backdrop-blur-md pt-20 lg:pt-52">
                             <h1 className=" text-3xl lg:text-[72px] font-extrabold">Want to Visit NIT Silchar?</h1> 
-                            <p className="mt-12 text-lg lg:text-3xl font-semibold lg:mt-24">Get your personalized id card for your visits</p>
+                            <p className="mt-12 text-lg lg:text-3xl font-semibold lg:mt-24">Get personalized ID card for your visit.</p>
                             <p className="mt-14 lg:mt-32 text-xs lg:text-xl lg:pb-14">Scroll to learn more</p>
                         </div>
                     </div>
