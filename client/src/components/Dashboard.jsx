@@ -19,8 +19,8 @@ const Dashboard = () => {
             <div className='w-[20.813rem] h-[18.25rem] bg-gray-50 rounded-xl bg-contain bg-center bg-no-repeat' style={{backgroundImage:`url(https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(data)}&amp;size=333x292)`,}}></div>
           </div>
         </div> 
-        <div className='bg-white rounded-3xl shadow-lg p-12 mb-8'> map</div> 
-        <div className='bg-white rounded-3xl shadow-lg p-12 mb-5'>help</div> 
+        <div className='bg-white rounded-3xl shadow-lg p-12 mb-8 lg:mb-3'> map</div> 
+        <div className='bg-white rounded-3xl shadow-lg p-12 mb-6'>help</div> 
     </div>
   )
 }
