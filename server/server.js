@@ -5,7 +5,7 @@ const router = require('./routes/checkinRoute.js');
 const userrouter = require('./routes/authorization.js');
 const scanRoutes = require('./routes/scanRoutes.js');
 const cookieParser=require("cookie-parser")
-
+const qrrouter= require('./routes/qrRoute.js')
 const app = express();  // Initialize Express app
 
 const PORT = 5001;
@@ -25,8 +25,9 @@ app.use(cors({
 // Endpoints
 app.use('/checkin', router);  
 app.use('/', userrouter);
-app.use('/scan', scanRoutes);
+app.use('/qr', qrrouter);
 
+app.use('/scan', scanRoutes);
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
