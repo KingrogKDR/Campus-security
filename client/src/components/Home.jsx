@@ -13,14 +13,14 @@ export default function Home(){
                         </div>
                     </div>
                     <div className="w-full h-3/5 lg:h-full bg-purple-100">
-                        <p className="text-center pt-8 pb-6 font-bold text-3xl lg:text-[48px] text-slate-700">Steps to follow</p>
+                        <p className="text-center pt-8 pb-6 font-bold text-3xl lg:text-[48px] text-slate-700">Steps to follow:</p>
                         <div className="w-full flex justify-center items-center gap-6 lg:gap-56 pb-8">
                             <div className="w-1/5 lg:w-2/5 space-y-2 text-sm lg:text-xl ml-2 lg:ml-20">
                                 <div className="mt-7">
-                                <span><span className="mr-2 bg-white rounded-full px-2">1</span>Register at the Gate of the University</span>
+                                <span><span className="mr-2 bg-white rounded-full px-2">1</span>Register at the Gate of the University.</span>
                                 </div>
                                 <div className="space-y-2 pt-6">
-                                    <span><span className="mr-2 bg-white rounded-full px-2">2</span>Get your personalised temporary ID card through login in the website or at your provided email id</span>
+                                    <span><span className="mr-2 bg-white rounded-full px-2">2</span>Get your personalised temporary ID card through login in the website or at your provided email id.</span>
                                 </div>
                             </div>
                             <div className="w-2/5 lg:w-1/5 grid justify-center mt-4 pb-8">
@@ -29,10 +29,10 @@ export default function Home(){
                             </div>
                             <div className="w-1/5 lg:w-2/5 space-y-2 text-sm lg:text-xl ml-2 lg:mr-20">
                                 <div className="pb-8">
-                                    <span><span className="mr-2 bg-white rounded-full px-2">3</span>Scan your id at the places you want to visit</span>
+                                    <span><span className="mr-2 bg-white rounded-full px-2">3</span>Scan your id at the places you want to visit.</span>
                                 </div>
                                 <div className="space-y-2 pt-6">
-                                    <span><span className="mr-2 bg-white rounded-full px-2">4</span>Enjoy your visit at NIT Silchar</span>
+                                    <span><span className="mr-2 bg-white rounded-full px-2">4</span>Enjoy your visit at NIT Silchar!</span>
                                 </div>
                             </div>
                         </div>
