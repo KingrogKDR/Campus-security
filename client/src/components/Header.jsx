@@ -41,7 +41,7 @@ console.log(userInfo);
                             Log in
                         </Link>
                     </div>
-                    <div
+                    {/* <div
                         className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
                         id="mobile-menu-2"
                     >
@@ -57,7 +57,7 @@ console.log(userInfo);
                                 </NavLink>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     </div>
             </nav>
         </header>
