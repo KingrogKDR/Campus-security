@@ -11,27 +11,27 @@ export default function Home(){
                         <p className="mt-14 lg:mt-40 text-xs lg:text-xl">Scroll to learn more</p>
                     </div>
                 </div>
-                <div className="w-full h-3/5 bg-purple-100">
+                <div className="w-full h-3/5 lg:h-full bg-purple-100">
                     <p className="text-center py-10 font-bold text-3xl lg:text-[48px] text-slate-700">Steps to follow</p>
-                    <div className="flex justify-center items-center gap-6 lg:gap-56 mt-6">
-                        <div className="space-y-3 text-sm lg:text-xl">
-                            <p><span className="mr-2 bg-white rounded-full px-2">1</span>Register at the Gate</p>
-                            <p>of the University</p>
-                            <div className="space-y-3 pt-12">
-                                <p><span className="mr-2 bg-white rounded-full px-2">2</span>Get your personalised</p>
-                                <p>temporary id card</p>
+                    <div className="w-full flex justify-center items-center gap-6 lg:gap-56">
+                        <div className="w-2/5 space-y-2 text-sm lg:text-xl ml-2 lg:ml-20">
+                            <div className="mt-7">
+                               <span><span className="mr-2 bg-white rounded-full px-2">1</span>Register at the Gate of the University</span>
+                            </div>
+                            <div className="space-y-2 pt-6">
+                                <span><span className="mr-2 bg-white rounded-full px-2">2</span>Get your personalised temporary ID card through login in the website or at your provided email id</span>
                             </div>
                         </div>
-                        <div className="">
-                            <img src={qr} alt="qr-code" />
+                        <div className="w-1/5 grid justify-center mt-4">
+                            <img src={qr} alt="qr-code" className="z-10 inset-0 shadow-lg rounded-xl"/>
+                            <div className="bg-gray-500/85 p-2 rounded-full blur-md z-2 inset-0 w-20 lg:w-44"></div>
                         </div>
-                        <div className="space-y-3 text-sm lg:text-xl">
-                            <p className="pt-6"><span className="mr-2 bg-white rounded-full px-2">3</span>Scan your id at the</p>
-                            <p>places you want</p>
-                            <p> to visit</p>
-                            <div className="space-y-3 pt-10">
-                                <p><span className="mr-2 bg-white rounded-full px-2">4</span>Enjoy your visit</p>
-                                <p>at NIT Silchar</p>
+                        <div className="w-2/5 space-y-2 text-sm lg:text-xl ml-2 lg:mr-20">
+                            <div className="">
+                                <span><span className="mr-2 bg-white rounded-full px-2">3</span>Scan your id at the places you want to visit</span>
+                            </div>
+                            <div className="space-y-2 pt-6">
+                                <span><span className="mr-2 bg-white rounded-full px-2">4</span>Enjoy your visit at NIT Silchar</span>
                             </div>
                         </div>
                     </div>
