@@ -28,7 +28,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Self Defence</h2>
+                            <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Materials</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
