@@ -48,12 +48,25 @@ console.log(userInfo);
                         )
                     } */}
                     <div className="flex items-center lg:order-2">
-                        <Link
-                            to="/login"
-                            className="text-white bg-gradient-to-t from-violet-600 to-purple-400 hover:bg-sky-50 hover:ring-2 hover:ring-sky-300 focus:ring-2 focus:ring-purple-300 font-medium rounded-lg text-sm lg:text-lg px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none transition duration-200"
-                        > 
-                            Log in
-                        </Link>
+                    {
+    username ? (
+        <Link
+            className="text-white bg-gradient-to-t from-violet-600 to-purple-400 hover:bg-sky-50 hover:ring-2 hover:ring-sky-300 focus:ring-2 focus:ring-purple-300 font-medium rounded-lg text-sm lg:text-lg px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none transition duration-200"
+            onClick={logout}
+        >
+            Log Out
+        </Link>
+    ) : (
+        <Link
+            to="/login"
+            className="text-white bg-gradient-to-t from-violet-600 to-purple-400 hover:bg-sky-50 hover:ring-2 hover:ring-sky-300 focus:ring-2 focus:ring-purple-300 font-medium rounded-lg text-sm lg:text-lg px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none transition duration-200"
+        >
+            Log In
+        </Link>
+    )
+}
+
+                       
                     </div>
                     {/* <div
                         className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"

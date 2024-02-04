@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-3 md:mb-0">
                         <Link to="/" className="flex items-center">
-                            <span className='py-2 px-1 ml-1 text-lg font-semibold font-akaya text-blue-500'>Uni<span className='font-bold text-purple-500 font-poppins'>Safe</span></span>
+                            <span className='py-2 px-1 ml-1 text-lg lg:text-3xl font-semibold font-akaya text-blue-500'>Uni<span className='font-bold text-purple-500 font-poppins'>Safe</span></span>
                         </Link>
                     </div>
                     <div className="grid grid-cols-3 sm:grid-cols-3 sm:justify-end">
@@ -28,7 +28,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                            <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">Self Defence</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
@@ -37,13 +37,18 @@ export default function Footer() {
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        Twitter
+                                        Link 1
                                     </a>
                                 </li>
                                 <li>
-                                    <Link to="/" className="hover:underline">
-                                        Instagram
-                                    </Link>
+                                    <a
+                                        href="#"
+                                        className="hover:underline"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Link 2
+                                    </a>
                                 </li>
                             </ul>
                         </div>
