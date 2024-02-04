@@ -30,7 +30,7 @@ const Dashboard = () => {
       <div className="bg-white rounded-3xl shadow-lg p-8 mb-6 lg:mb-2">
         {" "}
         <div
-          className="lg:w-[46rem] h-[15rem] bg-red-50 rounded-xl bg-cover bg-center bg-no-repeat"
+          className="h-[15rem] bg-red-50 rounded-xl bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(thumbnail.jpeg)',
           }}
